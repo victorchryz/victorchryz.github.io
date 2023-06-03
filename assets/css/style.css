@@ -299,3 +299,39 @@ img[src^="./assets/emojis/"] {
 width: 16px;
 height: 16px;
 }
+
+/* Resto do código CSS... */
+
+@media screen and (max-width: 768px) {
+  /* Estilos aplicados quando a largura da tela é de até 768px */
+  body main {
+    margin: 100px 100px 0;
+  }
+  
+  .header__right_center ul li a {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .sub-header-img .center img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos aplicados quando a largura da tela é de até 480px */
+  body main {
+    margin: 50px 50px 0;
+  }
+  
+  .header__right_center ul li a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  .sub-header-img .center img {
+    width: 50px;
+    height: 50px;
+  }
+}
