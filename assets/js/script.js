@@ -40,18 +40,18 @@ document.addEventListener("mousedown", function(e) {
   // Impedir a cópia de texto
   document.addEventListener("copy", function(e) {
     e.preventDefault();
-    alert("A cópia de texto foi bloqueada neste site por Victor Chryz");
+    alert("A cópia de texto foi bloqueada neste site por Victor Chryz.");
   });
   
   // Impedir a cópia de imagens
   document.addEventListener("dragstart", function(e) {
     e.preventDefault();
-    alert("A cópia de imagens foi bloqueada neste site por Victor Chryz");
+    alert("A cópia de imagens foi bloqueada neste site por Victor Chryz.");
   });
   
   // Bloquear o menu de contexto
 document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
-    alert("O menu de contexto do mouse foi bloqueado neste site por Victor Chryz");
+    alert("O menu de contexto do mouse foi bloqueado neste site por Victor Chryz.");
   });
   
