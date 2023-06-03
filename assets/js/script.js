@@ -26,7 +26,7 @@ window.addEventListener('load', function() {
     }
   
     showProjects();
-    setInterval(updateProjects, 10000); // Atualiza os projetos a cada 15 segundos
+    setInterval(updateProjects, 15000); // Atualiza os projetos a cada 15 segundos
   });
 
 // Bloquear botão direito do mouse
