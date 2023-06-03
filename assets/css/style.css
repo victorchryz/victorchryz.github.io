@@ -1,0 +1,301 @@
+/* Reset de estilos */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  background-color: #111; /* Cor de fundo escura */
+  color: white; /* Cor do texto */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Padrão */
+}
+body main{
+  font-family: Consolas, monospace;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #111; /* Cor de fundo escura */
+  color: ghostwhite; /* Cor do texto */
+  margin: 150px 150px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+  padding: 0;
+}
+
+
+#header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: transparent; /* Defina a cor de fundo desejada */
+}
+
+.header__left_up img{
+  width: 100px;
+  margin: 20px;
+}
+
+.header__left_up p {
+  font-size: 22px;
+  padding-top: 10px;
+  font-family: 'Grand Hotel',cursive;
+}
+.header__right_center ul li a {
+padding-right: 100px; /* Adicione o espaçamento vertical desejado */
+padding-left: 100px; /* Adicione o espaçamento vertical desejado */
+margin-top: 100px;
+font-weight: bold;
+}
+
+.item img {
+  width: 50px;
+}
+
+.item p {
+color: #ccc;
+}
+.item span {
+  color: #fff;
+}
+.item a {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.wrap {
+display: flex;
+justify-content: space-between;
+}
+
+.sub-header-img .center img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 5px solid darkgray;
+text-align: center;
+}
+
+.sub-header-img h1 {
+text-align: center;
+color: dodgerblue;
+
+}
+
+.sub-header-img h2 {
+text-align: center;
+font-size: 12px;
+color: darkgrey;
+
+}
+
+
+a {
+text-decoration: none; /* Remove o sublinhado */
+color: inherit; /* Herda a cor do texto pai */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #333;
+  padding: 10px 20px; /* Adiciona espaço interno para criar um botão */
+  border-radius: 4px; /* Arredonda as bordas do botão */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo ao passar o mouse */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+footer {
+background-color: #333; /* Cor de fundo do rodapé */
+text-align: center;
+font-size: 16px;
+margin: 0px 0px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+padding: 20px;
+
+}
+
+
+footer a {
+font-weight: bold;
+color: #fff;
+
+}
+
+footer p {
+color: #ccc;
+}
+/* Estilos para a seção Home */
+#home {
+background-color: #333; /* Cor de fundo do rodapé */
+text-align: center;
+font-size: 12px;
+margin: 0px 0px 20px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+padding: 40px 0px 40px;
+color: dodgerblue;
+}
+
+#sobre-mim p {
+
+  transition: transform 0.5s ease-in-out;
+}
+
+#sobre-mim p:hover {
+  transform: scale(0.95);
+}
+
+#sobre-mim a {
+
+  color: #ccc;
+}
+
+#sobre-mim a:hover {
+  color: dodgerblue; /* Define a cor dos links como vermelho quando o mouse estiver sobre eles */
+}
+
+#projects {
+  overflow: hidden;
+  margin: 100px 0;
+  position: relative;
+}
+
+.project-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.project {
+  flex: 0 0 33.33%;
+  text-align: center;
+  margin-right: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(0.9);
+}
+
+.project img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+.project h3 {
+  margin-top: 10px;
+}
+
+.project p {
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+
+/* Estilos para a seção Habilidades */
+#skills {
+margin: 100px 0px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+padding: 0;
+overflow: hidden;
+}
+
+.skill {
+width: 33.33%; /* Dividindo em 3 colunas */
+float: left;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+transition: transform 0.5s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(0.9);
+}
+
+.skill img {
+width: 100%;
+max-width: 200px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+height: auto; /* Mantém a proporção da imagem */
+margin-top: 10px;
+}
+
+.skill h3 {
+margin-top: 10px;
+}
+
+/* Estilos para a seção Habilidades 2 */
+#skills2 {
+margin: 0px 0px 200px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+padding: 0;
+overflow: hidden;
+}
+
+.skill2 {
+width: 100%; /* Largura total */
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+transition: transform 0.5s ease-in-out;
+}
+
+.skill2:hover {
+  transform: scale(0.9);
+}
+
+.skill2 img {
+width: 100%;
+max-width: 200px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+height: auto; /* Mantém a proporção da imagem */
+margin-top: 10px;
+}
+
+.skill2 h3 {
+margin-top: 10px;
+}
+
+/* Estilos para os parágrafos dentro das seções */
+section p {
+color: #999; /* Cor do texto dos parágrafos */
+font-size: 16px;
+line-height: 1.5;
+}
+
+.center {
+text-align: center;
+}
+
+img[src^="./assets/emojis/"] {
+width: 16px;
+height: 16px;
+}
