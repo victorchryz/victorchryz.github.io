@@ -6,7 +6,7 @@ Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre meus pro
 
 ## Sobre mim
 
-Olá, me chamo Víctor! Tudo bem com você? Espero que sim... Eu sou um cara apaixonado por códigos, amo as pessoas e acima de tudo Deus! Valorizo a família, sou bem detalhista e espero que possamos nos conhecer melhor e quem sabe iniciarmos nossa caminhada como Programador/Cliente e daí quem sabe nos tornemos Amigo/Amigo... E sim, também sou otimista pois tenho a crença de que atraímos o que jogamos ao mundo. Bem, resumidamente é isso... espero que goste dos meus projetos e quem sabe assim serei o responsável por desenvolver a solução e resolver os seus problemas. Segura meu forte abraço e espero nos falar em breve! :)
+Olá, meu nome é Víctor! Como você está? Espero que esteja tudo bem... Sou um entusiasta de programação, apaixonado por desafios e dedicado aos meus projetos. Além disso, sou uma pessoa que valoriza as relações humanas e tem um profundo amor por Deus. A família é extremamente importante para mim, e tenho uma personalidade detalhista, sempre atento aos pequenos detalhes. Gostaria de ter a oportunidade de conhecer você melhor. Talvez possamos embarcar juntos nessa jornada, seja como parceiros de programação ou mesmo como cliente e prestador de serviços. Quem sabe ao longo do caminho possamos construir uma amizade duradoura. Sou otimista por natureza, pois acredito que nossas ações e atitudes determinam o que colhemos na vida. Estou confiante de que posso ser o responsável por desenvolver soluções e ajudar a resolver os seus problemas. Receba meu forte abraço e espero ter a oportunidade de conversar com você em breve!
 
 ## Projetos
 
