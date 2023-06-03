@@ -31,6 +31,6 @@ Esta foi uma solução para um pequeno grupo de contadores de uma empresa privad
 
 ## Contato
 
-Telegram & Instagram: @VictorChryz
+Telegram: @VictorChryz
 
 © 2023 VictorChryz. Todos os direitos reservados.
