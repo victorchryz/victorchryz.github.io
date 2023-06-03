@@ -8,9 +8,13 @@ box-sizing: border-box;
 body {
   background-color: #111; /* Cor de fundo escura */
   color: white; /* Cor do texto */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Padrão */
 }
 body main{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Consolas, monospace;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
@@ -20,7 +24,6 @@ body main{
   margin: 150px 150px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
   padding: 0;
 }
-
 
 
 #header {
@@ -36,6 +39,11 @@ background-color: transparent; /* Defina a cor de fundo desejada */
   margin: 20px;
 }
 
+.header__left_up p {
+  font-size: 22px;
+  padding-top: 10px;
+  font-family: 'Grand Hotel',cursive;
+}
 .header__right_center ul li a {
 padding-right: 100px; /* Adicione o espaçamento vertical desejado */
 padding-left: 100px; /* Adicione o espaçamento vertical desejado */
@@ -47,6 +55,12 @@ font-weight: bold;
   width: 50px;
 }
 
+.item p {
+color: #ccc;
+}
+.item span {
+  color: #fff;
+}
 .item a {
   display: flex;
   align-items: center;
@@ -75,7 +89,9 @@ color: dodgerblue;
 
 .sub-header-img h2 {
 text-align: center;
+font-size: 12px;
 color: darkgrey;
+
 }
 
 
@@ -85,32 +101,33 @@ color: inherit; /* Herda a cor do texto pai */
 }
 
 nav ul {
-list-style-type: none;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul li {
-margin-right: 20px;
+  margin-right: 10px;
 }
 
 nav ul li a {
-text-decoration: none;
-color: white; /* Cor dos links do menu */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #333;
+  padding: 10px 20px; /* Adiciona espaço interno para criar um botão */
+  border-radius: 4px; /* Arredonda as bordas do botão */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo ao passar o mouse */
 }
 
 nav ul li a:hover {
-text-decoration: none; /* Remove o sublinhado */
-color: inherit; /* Herda a cor do texto pai */
-
+  background-color: #555; /* Altera a cor de fundo ao passar o mouse */
 }
 
-sub-head-img h1 {
-font-size: 32px;
-margin-bottom: 10px;
-color: dodgerblue;
-}
 
 h2 {
 font-size: 24px;
@@ -126,21 +143,16 @@ padding: 20px;
 
 }
 
-.footer-content {
-max-width: 400px;
-margin: 0 auto;
-}
 
-.footer-content p {
-margin-bottom: 8px;
-}
-
-.footer-content a {
-text-decoration: none;
-color: #3498db;
+footer a {
 font-weight: bold;
+color: #fff;
+
 }
 
+footer p {
+color: #ccc;
+}
 /* Estilos para a seção Home */
 #home {
 background-color: #333; /* Cor de fundo do rodapé */
@@ -151,33 +163,65 @@ padding: 40px 0px 40px;
 color: dodgerblue;
 }
 
-/* Estilos para a seção Projetos */
+#sobre-mim p {
+
+  transition: transform 0.5s ease-in-out;
+}
+
+#sobre-mim p:hover {
+  transform: scale(0.95);
+}
+
+#sobre-mim a {
+
+  color: #ccc;
+}
+
+#sobre-mim a:hover {
+  color: dodgerblue; /* Define a cor dos links como vermelho quando o mouse estiver sobre eles */
+}
+
 #projects {
-overflow: hidden;
-margin: 100px 0px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
-padding: 0;
+  overflow: hidden;
+  margin: 100px 0;
+  position: relative;
+}
+
+.project-container {
+  display: flex;
+  overflow: hidden;
 }
 
 .project {
-width: 30%;
-float: left;
-text-align: center;
+  flex: 0 0 33.33%;
+  text-align: center;
+  margin-right: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(0.9);
 }
 
 .project img {
-width: 100%;
-max-width: 200px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+  width: 100%;
+  max-width: 200px;
 }
 
-.project p {
-margin-top: 10px;
-margin-left: 10px;
-margin-right: 10px;
+.project-details {
+  margin-top: 10px;
 }
 
 .project h3 {
-margin-top: 10px;
+  margin-top: 10px;
 }
+
+.project p {
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
 
 /* Estilos para a seção Habilidades */
 #skills {
@@ -192,6 +236,11 @@ float: left;
 text-align: center;
 padding: 10px;
 box-sizing: border-box;
+transition: transform 0.5s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(0.9);
 }
 
 .skill img {
@@ -217,6 +266,11 @@ width: 100%; /* Largura total */
 text-align: center;
 padding: 10px;
 box-sizing: border-box;
+transition: transform 0.5s ease-in-out;
+}
+
+.skill2:hover {
+  transform: scale(0.9);
 }
 
 .skill2 img {
@@ -232,7 +286,7 @@ margin-top: 10px;
 
 /* Estilos para os parágrafos dentro das seções */
 section p {
-color: #ccc; /* Cor do texto dos parágrafos */
+color: #999; /* Cor do texto dos parágrafos */
 font-size: 16px;
 line-height: 1.5;
 }
