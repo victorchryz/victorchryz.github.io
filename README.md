@@ -1,36 +1,69 @@
 # [victorchryz.github.io](https://victorchryz.github.io/)
 
-# Meu Portfólio
+# Víctor Chryz - Portfólio
+Este repositório contém o código-fonte do portfólio de Víctor Chryz. O portfólio é um site estático desenvolvido em HTML, CSS e JavaScript.
 
-Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre meus projetos e habilidades.
+# Instalação
+# Faça o clone deste repositório:
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-## Sobre mim
+# Navegue até a pasta do projeto:
+cd nome-do-repositorio
 
-Olá, meu nome é Víctor! Como você está? Espero que esteja tudo bem... Sou um entusiasta de programação, apaixonado por desafios e dedicado aos meus projetos. Além disso, sou uma pessoa que valoriza as relações humanas e tem um profundo amor por Deus. A família é extremamente importante para mim, e tenho uma personalidade detalhista, sempre atento aos pequenos detalhes. Gostaria de ter a oportunidade de conhecer você melhor. Talvez possamos embarcar juntos nessa jornada, seja como parceiros de programação ou mesmo como cliente e prestador de serviços. Quem sabe ao longo do caminho possamos construir uma amizade duradoura. Sou otimista por natureza, pois acredito que nossas ações e atitudes determinam o que colhemos na vida. Estou confiante de que posso ser o responsável por desenvolver soluções e ajudar a resolver os seus problemas. Receba meu forte abraço e espero ter a oportunidade de conversar com você em breve!
+# Pré-requisitos
+Certifique-se de ter os seguintes requisitos antes de executar o projeto:
+Navegador da Web atualizado
 
-## Projetos
+# Executando o projeto
+Abra o arquivo index.html no seu navegador.
 
-### AskmeGPT
+# Estrutura do projeto
+O projeto está organizado da seguinte maneira:
 
-Este foi um projeto pessoal, um bot do Telegram que desenvolvi em Python e possui Inteligência Artificial baseado nas tecnologias GPT assim como o ChatGPT da OpenAI. Ele é gratuito para usar.
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── emojis
+│   │   └── 1f9d1-1f3fd-200d-1f4bb.svg
+|   |   └── (outros emojis)
+│   ├── img
+│   │   ├── logo-pt-1-small.jpg
+│   │   ├── telegram_logo_circle_icon.svg
+│   │   ├── perf1.jpg
+│   │   ├── HoryuGames720x600-Brand.png
+│   │   ├── askmeGPT.jpeg
+│   │   ├── PDVSimples.jpg
+│   │   ├── NFSe_PDF_Downloader.jpg
+│   │   └── (outras imagens)
+│   └── js
+│       └── script.js
+├── index.html
+└── README.md
 
-### PDV Simples
+A pasta assets contém os recursos utilizados no projeto, como arquivos CSS, imagens e arquivos JavaScript.
+O arquivo index.html é a página inicial do portfólio.
 
-Este foi um sistema de PDV (Ponto de Vendas) Simples que desenvolvi para uma comerciante ter o controle das finanças e mercadorias da mercearia utilizando PHP, MySQL e JQuery.
+# Contribuição
+Contribuições são bem-vindas! Se você quiser contribuir com este projeto, siga as etapas abaixo:
+Faça um fork deste repositório.
 
-### NFSe PDF Downloader
+Crie uma nova branch com a sua contribuição:
+git checkout -b minha-contribuicao
+Faça as alterações desejadas.
 
-Esta foi uma solução para um pequeno grupo de contadores de uma empresa privada que desenvolvi também em Python. Para baixar NFSe em formato PDF de forma automática de um site governamental de forma organizada (Nº das Notas) e Datas correspondentes evitando que os contadores navegassem e baixassem os arquivos um por um e organizando-os manualmente.
+Faça o commit das suas alterações:
+git commit -m "Minha contribuição"
 
-## Habilidades
+Faça o push para o repositório remoto:
+git push origin minha-contribuicao
+Abra um pull request no GitHub.
 
-- Python 3
-- CSS / HTML / JS
-- PHP
-- Telegram Bot
+# Contato
+Nome: Víctor Chryz
+Website: https://victorchyrz.github.io
+Telegram: https://t.me/VictorChryz ou @VictorChryz
+Sinta-se à vontade para entrar em contato para qualquer dúvida, sugestão ou oportunidade de colaboração.
 
-## Contato
+Obrigado por visitar o meu portfólio! Mal posso esperar para conversar com você em breve!
 
-Telegram: @VictorChryz
-
-© 2023 VictorChryz. Todos os direitos reservados.
+Este README foi gerado automaticamente a partir do código-fonte do projeto.
