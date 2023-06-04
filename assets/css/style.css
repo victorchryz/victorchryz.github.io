@@ -308,8 +308,8 @@ height: 16px;
 
 /* Classe para o ícone do Telegram para ajustar seu tamanho */
 .header__contacts_clear .item img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-right: 5px;
 }
 /* Estilos aplicados quando a largura da tela é maior que 768px */
@@ -361,7 +361,7 @@ height: 16px;
     width: 50px;
     height: 50px;
   }
-}
+
 
 /* Estilos adicionais para telas menores */
 .header__left_up p {
@@ -380,4 +380,5 @@ height: 16px;
 .header__right_up {
   display: flex;
   align-items: center;
+}
 }
