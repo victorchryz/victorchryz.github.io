@@ -31,7 +31,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-background-color: transparent; /* Defina a cor de fundo desejada */
+background-color: transparent; /* Cor de fundo */
 }
 
 .header__left_up img{
@@ -45,8 +45,8 @@ background-color: transparent; /* Defina a cor de fundo desejada */
   font-family: 'Grand Hotel',cursive;
 }
 .header__right_center ul li a {
-padding-right: 100px; /* Adicione o espaçamento vertical desejado */
-padding-left: 100px; /* Adicione o espaçamento vertical desejado */
+padding-right: 100px; /* Espaçamento vertical direito */
+padding-left: 100px; /* Espaçamento vertical esquerdo */
 margin-top: 100px;
 font-weight: bold;
 }
@@ -245,7 +245,7 @@ transition: transform 0.5s ease-in-out;
 
 .skill img {
 width: 100%;
-max-width: 200px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+max-width: 200px; /* Ajuste o tamanho máximo da imagem */
 height: auto; /* Mantém a proporção da imagem */
 margin-top: 10px;
 }
@@ -275,7 +275,7 @@ transition: transform 0.5s ease-in-out;
 
 .skill2 img {
 width: 100%;
-max-width: 200px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+max-width: 200px; /* Ajuste o tamanho máximo da imagem */
 height: auto; /* Mantém a proporção da imagem */
 margin-top: 10px;
 }
@@ -300,10 +300,37 @@ width: 16px;
 height: 16px;
 }
 
-/* Resto do código CSS... */
+/* Estilo flexível ao header__right_center para alinhar os botões de navegação */
+.header__right_center {
+  display: flex;
+  align-items: center;
+}
 
+/* Classe para o ícone do Telegram para ajustar seu tamanho */
+.header__contacts_clear .item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+/* Estilos aplicados quando a largura da tela é maior que 768px */
+@media screen and (min-width: 769px) {
+  body main {
+    margin: 150px 150px 0;
+  }
+  
+  .header__right_center ul li a {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  
+  .sub-header-img .center img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Estilos aplicados quando a largura da tela é de até 768px */
 @media screen and (max-width: 768px) {
-  /* Estilos aplicados quando a largura da tela é de até 768px */
   body main {
     margin: 100px 100px 0;
   }
@@ -319,8 +346,8 @@ height: 16px;
   }
 }
 
+/* Estilos aplicados quando a largura da tela é de até 480px */
 @media screen and (max-width: 480px) {
-  /* Estilos aplicados quando a largura da tela é de até 480px */
   body main {
     margin: 50px 50px 0;
   }
@@ -334,4 +361,23 @@ height: 16px;
     width: 50px;
     height: 50px;
   }
+}
+
+/* Estilos adicionais para telas menores */
+.header__left_up p {
+  font-size: 14px;
+}
+
+.header__right_center {
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.header__right_center nav {
+  display: none;
+}
+
+.header__right_up {
+  display: flex;
+  align-items: center;
 }
