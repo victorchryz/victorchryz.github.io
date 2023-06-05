@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./assets/css/celh.css">
+  <link rel="stylesheet" href="./assets/css/celv.css">
   <link rel="icon" type="image/svg" href="./assets/emojis/1f9d1-1f3fd-200d-1f4bb.svg">
-  <title>Víctor Chryz - Portfólio</title>
+  <title>Víctor Chryz</title>
 </head>
 
 <body>
@@ -46,7 +48,7 @@
     
   <main>
     <section id="home">
-      <h1>Bem-vindo ao Meu Portfólio</h1>
+      <h1>BEM-VINDO AO MEU PORTFÓLIO!</h1>
       <p>Aqui você encontrará informações sobre mim, meus projetos e habilidades.</p>
     </section>
 
@@ -56,11 +58,14 @@
       </div>
       <h1>Víctor Chryz</h1>
       <h2>Apaixonado por códigos, ama pessoas e acima de tudo Deus!</h2>
+      <audio id="audioPlayer" controls autoplay>
+        <source id="audioSource" src="" type="audio/mp3">
+      </audio>
     </div>
     
 
     <section id="sobre-mim">
-      <h2>Sobre mim:</h2>
+      <h2>SOBRE MIM:</h2>
       <p>
         Olá, meu nome é Víctor! Como você está? Espero que esteja tudo bem. 
         Tenho 33 anos e sou casado há mais de 10 anos. 
@@ -108,7 +113,7 @@
     
 
     <section id="projects">
-      <h2>Projetos:</h2>
+      <h2>PROJETOS:</h2>
       <div class="project-container">
         <div class="project">
           <a href="https://horyu.org/" target="_blank">
@@ -165,38 +170,107 @@
       
       
     <section id="skills">
-      <h2>Habilidades:</h2>
+      <h2>HABILIDADES:</h2>
       
       <div class="skill">
-        <a href="https://pt.wikipedia.org/wiki/Python" target="_blank">
-        <img src="https://clipart-library.com/image_gallery2/Python-Logo-Free-PNG-Image.png" alt="Python 3">
-        <h3>Python</h3>
-      </a>
+        <a href="https://pt.wikipedia.org/wiki/HTML" target="_blank">
+        <div>
+          <img src="./assets/img/html.png" alt="HTML">
+        </div>
+        </a>
       </div>
 
       <div class="skill">
-        <a href="https://www.bing.com/search?q=o+que+%C3%A9+html+css+e+javascript+?" target="_blank">
-        <img src="https://woz-u.com/wp-content/uploads/2019/09/html-css-js.png" alt="CSS / HTML / JS">
-        <h3>CSS / HTML / JS</h3>
+        <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
+        <div>
+          <img src="./assets/img/css.png" alt="CSS">
+        </div>
         </a>
       </div>
       
       <div class="skill">
+        <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">
+        <div>
+          <img src="./assets/img/javascript.png" alt="JavaScript">
+        </div>
+        </a>
+      </div>
+
+      <div class="skill">
+        <a href="https://pt.wikipedia.org/wiki/Python" target="_blank">
+          <div>
+            <img src="./assets/img/python.png" alt="Python 3">
+          </div>
+        </a>
+      </div>
+     
+      <div class="skill">
         <a href="https://pt.wikipedia.org/wiki/PHP" target="_blank">
-        <img src="https://pngimg.com/uploads/php/php_PNG50.png" alt="PHP">
-        <h3>PHP</h3>
+        <div>
+          <img src="./assets/img/php.png" alt="PHP">
+        </div>
+        </a>
+      </div>
+
+      <div class="skill">
+        <a href="https://pt.wikipedia.org/wiki/PhpMyAdmin" target="_blank">
+        <div>
+          <img src="./assets/img/phpmyadmin.png" alt="PHP">
+        </div>
+        </a>
+      </div>
+
+      <div class="skill">
+        <a href="https://pt.wikipedia.org/wiki/MySQL" target="_blank">
+        <div>
+          <img src="./assets/img/mysql.png" alt="MySQL">
+        </div>
+        </a>
+      </div>
+      
+      <div class="skill">
+        <a href="https://en.wikipedia.org/wiki/Navicat" target="_blank">
+        <div>
+          <img src="./assets/img/navicat.png" alt="Navicat">
+          <p>Navicat</p>
+        </div>
+        </a>
+      </div>
+
+      <div class="skill">
+        <a href="https://pt.wikipedia.org/wiki/Microsoft_SQL_Server" target="_blank">
+        <div>
+          <img src="./assets/img/mssql.png" alt="MSSQL">
+        </div>
+        </a>
+      </div>
+
+      <div class="skill">
+        <a href="https://pt.wikipedia.org/wiki/LAMP" target="_blank">
+        <div>
+          <img src="./assets/img/lamp.png" alt="LAMP">
+        </div>
+        </a>
+      </div>
+
+      <div class="skill">
+        <a href="#" onclick="abrirDuasAbas(event)">
+          <div>
+            <img src="./assets/img/linux-windows.png" alt="MSSQL">
+          </div>
+        </a>
+      </div>
+
+      <div class="skill">
+        <a href="https://www.bing.com/search?q=o+que+%C3%A9+bot+no+telegram+?" target="_blank">
+        <div>
+          <img src="./assets/img/botfather.png" alt="Bot Telegram">
+          <p>Bot Telegram</p>
+        </div>
         </a>
       </div>
     </section>
 
-          
-    <section id="skills2">
-      <div class="skill2">
-        <a href="https://www.bing.com/search?q=o+que+%C3%A9+bot+no+telegram+?" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD3iMvNIpaNq5s8PUHfAIrQpfcd9uaMVtvL0PcHR0-_gyvD26w" alt="Telegram Bot">
-        <h3>Telegram Bot</h3>
-        </a>
-      </div>
   </main>
   <footer>
     <p>&copy; <span id="current-year"></span> - <a href="https://t.me/victorchryz" target="_blank">VictorChryz</a>. Todos os direitos reservados.</p>
