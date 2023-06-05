@@ -7,7 +7,7 @@ box-sizing: border-box;
 
 body {
   background-color: #111; /* Cor de fundo escura */
-  color: white; /* Cor do texto */
+  color: darkgrey; /* Cor do texto */
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
@@ -21,10 +21,9 @@ body main{
   min-height: 100vh;
   background-color: #111; /* Cor de fundo escura */
   color: ghostwhite; /* Cor do texto */
-  margin: 150px 150px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+  margin: 0px 180px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
   padding: 0;
 }
-
 
 #header {
 position: fixed;
@@ -52,7 +51,7 @@ font-weight: bold;
 }
 
 .item img {
-  width: 50px;
+  width: 30px;
 }
 
 .item p {
@@ -73,9 +72,27 @@ display: flex;
 justify-content: space-between;
 }
 
+/* Ajusta o tamanho do player de áudio */
+audio {
+  align-self: center;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.sub-header-img {
+  margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+  text-align: center;
+}
+
+
 .sub-header-img .center img {
-width: 150px;
-height: 150px;
+width: 250px;
+height: 250px;
 border-radius: 50%;
 border: 5px solid darkgray;
 text-align: center;
@@ -115,8 +132,8 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
-  font-size: 20px;
+  color: #ddd;
+  font-size: 18px;
   font-weight: bold;
   background-color: #333;
   padding: 10px 20px; /* Adiciona espaço interno para criar um botão */
@@ -132,6 +149,7 @@ nav ul li a:hover {
 h2 {
 font-size: 24px;
 margin-bottom: 10px;
+color: darkturquoise;
 }
 
 footer {
@@ -158,11 +176,14 @@ color: #ccc;
 background-color: #333; /* Cor de fundo do rodapé */
 text-align: center;
 font-size: 12px;
-margin: 0px 0px 20px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
-padding: 40px 0px 40px;
+margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+padding: 30px 0px 30px;
 color: dodgerblue;
 }
 
+#sobre-mim {
+  margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+}
 #sobre-mim p {
 
   transition: transform 0.5s ease-in-out;
@@ -182,9 +203,9 @@ color: dodgerblue;
 }
 
 #projects {
+  margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
   overflow: hidden;
-  margin: 100px 0;
-  position: relative;
+
 }
 
 .project-container {
@@ -193,10 +214,13 @@ color: dodgerblue;
 }
 
 .project {
-  flex: 0 0 33.33%;
+  width: 50%; /* Dividindo em 3 colunas */
+  float: left;
   text-align: center;
-  margin-right: 10px;
+  padding: 10px;
+  box-sizing: border-box;
   transition: transform 0.5s ease-in-out;
+  position: relative;
 }
 
 .project:hover {
@@ -204,9 +228,14 @@ color: dodgerblue;
 }
 
 .project img {
-  width: 100%;
-  max-width: 200px;
+  width: 250px;
+  height: 250px;
 }
+
+.project-details p i {
+  text-align: left;
+}
+
 
 .project-details {
   margin-top: 10px;
@@ -217,26 +246,26 @@ color: dodgerblue;
 }
 
 .project p {
-  align-items: center;
   margin-top: 10px;
-  margin-right: 20px;
+  align-items: center;
 }
 
 
 /* Estilos para a seção Habilidades */
 #skills {
-margin: 100px 0px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
 padding: 0;
 overflow: hidden;
 }
 
 .skill {
-width: 33.33%; /* Dividindo em 3 colunas */
+width: 25%; /* Dividindo em 3 colunas */
 float: left;
 text-align: center;
 padding: 10px;
 box-sizing: border-box;
 transition: transform 0.5s ease-in-out;
+position: relative;
 }
 
 .skill:hover {
@@ -244,45 +273,18 @@ transition: transform 0.5s ease-in-out;
 }
 
 .skill img {
-width: 100%;
-max-width: 200px; /* Ajuste o tamanho máximo da imagem */
-height: auto; /* Mantém a proporção da imagem */
-margin-top: 10px;
+  width: 125px;
+  height: 125px;
 }
 
 .skill h3 {
 margin-top: 10px;
 }
 
-/* Estilos para a seção Habilidades 2 */
-#skills2 {
-margin: 0px 0px 200px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
-padding: 0;
-overflow: hidden;
-}
-
-.skill2 {
-width: 100%; /* Largura total */
-text-align: center;
-padding: 10px;
-box-sizing: border-box;
-transition: transform 0.5s ease-in-out;
-}
-
-.skill2:hover {
-  transform: scale(0.9);
-}
-
-.skill2 img {
-width: 100%;
-max-width: 200px; /* Ajuste o tamanho máximo da imagem */
-height: auto; /* Mantém a proporção da imagem */
-margin-top: 10px;
-}
-
-.skill2 h3 {
-margin-top: 10px;
-}
+.skill p {
+  color: white;
+  font-weight: bold;
+  }
 
 /* Estilos para os parágrafos dentro das seções */
 section p {
@@ -291,94 +293,8 @@ font-size: 16px;
 line-height: 1.5;
 }
 
-.center {
-text-align: center;
-}
-
 img[src^="./assets/emojis/"] {
 width: 16px;
 height: 16px;
 }
 
-/* Estilo flexível ao header__right_center para alinhar os botões de navegação */
-.header__right_center {
-  display: flex;
-  align-items: center;
-}
-
-/* Classe para o ícone do Telegram para ajustar seu tamanho */
-.header__contacts_clear .item img {
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-}
-/* Estilos aplicados quando a largura da tela é maior que 768px */
-@media screen and (min-width: 769px) {
-  body main {
-    margin: 150px 150px 0;
-  }
-  
-  .header__right_center ul li a {
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-  
-  .sub-header-img .center img {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-/* Estilos aplicados quando a largura da tela é de até 768px */
-@media screen and (max-width: 768px) {
-  body main {
-    margin: 100px 100px 0;
-  }
-  
-  .header__right_center ul li a {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  
-  .sub-header-img .center img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-/* Estilos aplicados quando a largura da tela é de até 480px */
-@media screen and (max-width: 480px) {
-  body main {
-    margin: 50px 50px 0;
-  }
-  
-  .header__right_center ul li a {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  
-  .sub-header-img .center img {
-    width: 50px;
-    height: 50px;
-  }
-
-
-/* Estilos adicionais para telas menores */
-.header__left_up p {
-  font-size: 14px;
-}
-
-.header__right_center {
-  justify-content: flex-end;
-  flex-grow: 1;
-}
-
-.header__right_center nav {
-  display: none;
-}
-
-.header__right_up {
-  display: flex;
-  align-items: center;
-}
-}
