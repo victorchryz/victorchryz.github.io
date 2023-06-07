@@ -84,11 +84,17 @@ audioPlayer.play();
 window.addEventListener('load', function() {
   const projectContainer = document.querySelector('.project-container');
   const projects = document.querySelectorAll('.project');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
   const numVisibleProjectsDesktop = 2; // Número de projetos visíveis no desktop
   let currentProject = 0;
 
   function showProjects() {
     const numVisibleProjects = isMobile() ? 2 : numVisibleProjectsDesktop;
+    const prevButtonDisplay = currentProject === 0 ? 'none' : 'block';
+    const nextButtonDisplay = currentProject >= projects.length - numVisibleProjects ? 'none' : 'block';
+    prevButton.style.display = prevButtonDisplay;
+    nextButton.style.display = nextButtonDisplay;
   
     for (let i = 0; i < projects.length; i++) {
       if (i >= currentProject && i < currentProject + numVisibleProjects) {
@@ -98,13 +104,7 @@ window.addEventListener('load', function() {
       }
     }
   
-    if (isMobile()) {
-      projectContainer.style.flexWrap = 'wrap'; // Quebra a linha em dispositivos móveis
-    } else {
-      projectContainer.style.flexWrap = 'nowrap'; // Mantém a exibição em uma única linha em desktop
-    }
   }
-  
 
   function updateProjects() {
     const numVisibleProjects = isMobile() ? 2 : numVisibleProjectsDesktop;
@@ -121,7 +121,24 @@ window.addEventListener('load', function() {
   }
 
   showProjects();
-  setInterval(updateProjects, 10000); // Atualiza os projetos a cada 10 segundos
+  setInterval(updateProjects, 30000); // Atualiza os projetos a cada 30 segundos
+
+  // Adicione os event listeners para os botões do carrossel
+  prevButton.addEventListener('click', function() {
+    currentProject -= numVisibleProjectsDesktop;
+    if (currentProject < 0) {
+      currentProject = Math.max(0, projects.length - numVisibleProjectsDesktop);
+    }
+    showProjects();
+  });
+
+  nextButton.addEventListener('click', function() {
+    currentProject += numVisibleProjectsDesktop;
+    if (currentProject >= projects.length) {
+      currentProject = 0;
+    }
+    showProjects();
+  });
 });
 
 // function abrirDuasAbas(event) {
@@ -146,6 +163,43 @@ function abrirDuasAbas(event) {
   // Abre a segunda aba com o segundo link
   var segundaAba = window.open('https://pt.wikipedia.org/wiki/Microsoft_Windows', '_blank');
 }
+const btnReproduzir = document.getElementById('btn-reproduzir');
+const audio = new Audio('./assets/mp3/txt-speech.mp3');
+const duracaoAudio = 4 * 60 + 10; // Duração do áudio em segundos
+
+function reproduzirAudio() {
+  audio.currentTime = 0;
+  audio.play();
+  btnReproduzir.innerHTML = '▌▌ Pausar';
+}
+
+function pausarAudio() {
+  audio.pause();
+  btnReproduzir.innerHTML = '▶ Ouvir Texto';
+}
+
+function reiniciarAudio() {
+  audio.currentTime = 0;
+  audio.play();
+  btnReproduzir.innerHTML = '▌▌ Pausar';
+}
+
+audio.addEventListener('ended', function() {
+  btnReproduzir.innerHTML = '▶ Ouvir Texto';
+});
+
+btnReproduzir.addEventListener('click', function() {
+  if (audio.paused) {
+    if (audio.currentTime === duracaoAudio) {
+      reiniciarAudio();
+    } else {
+      reproduzirAudio();
+    }
+  } else {
+    pausarAudio();
+  }
+});
+
 
 // Bloquear botão direito do mouse
 document.addEventListener("mousedown", function(e) {
