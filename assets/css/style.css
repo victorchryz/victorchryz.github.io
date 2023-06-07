@@ -254,15 +254,15 @@ margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
 
 .project-details {
-  margin-top: 10px;
-  text-align: left;
+margin-top: 10px;
+text-align: left;
 }
 
 .project h3 {
-  color: skyblue;
-  margin-top: 10px;
-  text-align: center; /* Centraliza o título horizontalmente */
-  font-weight: bold;
+color: skyblue;
+margin-top: 10px;
+text-align: center; /* Centraliza o título horizontalmente */
+font-weight: bold;
 }
 
 .project p {
@@ -273,8 +273,8 @@ font-style: italic;
 }
 
 .project i {
-  color: #ccc;
-  font-style: italic;
+color: #ccc;
+font-style: italic;
 }
 
 /* Adicione essas regras para os botões do carrossel */
