@@ -1,5 +1,12 @@
-/* Estilos aplicados quando a largura da tela é de até 480px */
 @media screen and (max-width: 800px) {
+
+/* Reset de estilos */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 body main {
 margin: 50px 10px 0px;
 }
