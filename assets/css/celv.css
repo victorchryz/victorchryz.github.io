@@ -1,87 +1,98 @@
 /* Estilos aplicados quando a largura da tela é de até 480px */
 @media screen and (max-width: 720px) {
-    body main {
-    margin: 50px 10px 0px;
-    }
-    
-    body main h1 {
-    font-size: 18px;
-    }
-    
-    body main h2 {
-    font-size: 16px;
-    }
-    
-    body main h3 {
-    font-size: 14px;
-    }
-    
-    body main p {
-    font-size: 12px;
-    }
-    
-    body main i {
-    font-size: 12px;
-    }
-    
-    .header__right_center ul li a {
-    font-size: 6px;
-    padding-right: 5px;
-    padding-left: 5px;
-    }
-    
-    .sub-header-img .center img {
-    width: 100px;
-    height: 100px;
-    }
-    
-    .header__left_up p {
-    font-size: 6px;
-    padding-left: 10px;
-    padding-right: 5px;
-    }
-    
-    .item {
-    font-size: 8px;
-    margin-right: 0px;
-    padding-right: 0px;
-    }
-    
-    .item img {
-    width: 15px;
-    }
-    
-    .header__left_up img {
-    width: 60px;
-    padding-right: 10px;
-    margin: 0px;
-    padding-left: 10px;
-    }
-    
-    .project img {
-    width: 150px;
-    height: 150px;
-    }
-    
-    .skill img {
-    width: 75px;
-    height: 75px;
-    }
-    
-    
-    footer {
-    font-size: 12px;
-    }
-    
+
+/* Reset de estilos */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body main {
+margin: 50px 10px 0px;
+}
+
+body main h1 {
+font-size: 18px;
+}
+
+body main h2 {
+font-size: 16px;
+}
+
+body main h3 {
+font-size: 14px;
+}
+
+body main p {
+font-size: 12px;
+}
+
+body main i {
+font-size: 12px;
+}
+
+.header__right_center ul li a {
+font-size: 6px;
+padding-right: 5px;
+padding-left: 5px;
+}
+
+.sub-header-img .center img {
+width: 100px;
+height: 100px;
+}
+
+.header__left_up p {
+font-size: 6px;
+padding-left: 10px;
+padding-right: 5px;
+}
+
+.item {
+font-size: 8px;
+margin-right: 0px;
+padding-right: 0px;
+}
+
+.item img {
+width: 15px;
+}
+
+.header__left_up img {
+width: 60px;
+padding-right: 10px;
+margin: 0px;
+padding-left: 10px;
+}
+
+.project {
+padding: 0px;
+}
+.project img {
+width: 150px;
+height: 150px;
+}
+
+.skill img {
+width: 75px;
+height: 75px;
+}
+
+
+footer {
+font-size: 12px;
+}
+
 }
 
 /* Estilos aplicados quando a largura da tela é de até 480px */
 @media screen and (max-width: 620px) {
 
 .header__right_center ul li a {
-    font-size: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
-    }
-    
+font-size: 5px;
+padding-right: 5px;
+padding-left: 5px;
+}
+
 }
