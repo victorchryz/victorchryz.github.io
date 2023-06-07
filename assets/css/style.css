@@ -6,23 +6,23 @@ box-sizing: border-box;
 }
 
 body {
-  background-color: #111; /* Cor de fundo escura */
-  color: darkgrey; /* Cor do texto */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Padrão */
+background-color: #111; /* Cor de fundo escura */
+color: darkgrey; /* Cor do texto */
+-webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Padrão */
 }
 body main{
-  font-family: Consolas, monospace;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #111; /* Cor de fundo escura */
-  color: ghostwhite; /* Cor do texto */
-  margin: 0px 180px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
-  padding: 0;
+font-family: Consolas, monospace;
+line-height: 1.5;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: #111; /* Cor de fundo escura */
+color: ghostwhite; /* Cor do texto */
+margin: 0px 180px 0; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+padding: 0;
 }
 
 #header {
@@ -31,17 +31,18 @@ top: 0;
 left: 0;
 right: 0;
 background-color: transparent; /* Cor de fundo */
+z-index: 9999; /* Valor alto para garantir a exibição acima de outros elementos */
 }
 
 .header__left_up img{
-  width: 100px;
-  margin: 20px;
+width: 100px;
+margin: 20px;
 }
 
 .header__left_up p {
-  font-size: 22px;
-  padding-top: 10px;
-  font-family: 'Grand Hotel',cursive;
+font-size: 22px;
+padding-top: 10px;
+font-family: 'Grand Hotel',cursive;
 }
 .header__right_center ul li a {
 padding-right: 100px; /* Espaçamento vertical direito */
@@ -51,20 +52,20 @@ font-weight: bold;
 }
 
 .item img {
-  width: 30px;
+width: 30px;
 }
 
 .item p {
 color: #ccc;
 }
 .item span {
-  color: #fff;
+color: #fff;
 }
 .item a {
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
-  font-weight: bold;
+display: flex;
+align-items: center;
+padding-right: 10px;
+font-weight: bold;
 }
 
 .wrap {
@@ -74,19 +75,19 @@ justify-content: space-between;
 
 /* Ajusta o tamanho do player de áudio */
 audio {
-  align-self: center;
+align-self: center;
 }
 
 .center {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
 .sub-header-img {
-  margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
-  text-align: center;
+margin: 0px 0px 50px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+text-align: center;
 }
 
 
@@ -106,9 +107,25 @@ color: dodgerblue;
 
 .sub-header-img h2 {
 text-align: center;
-font-size: 12px;
+font-size: 10px;
 color: darkgrey;
 
+}
+
+button#btn-reproduzir {
+background-color: #3498db;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 12px;
+font-weight: bold;
+cursor: pointer;
+margin-bottom: 10px;
+}
+
+button#btn-reproduzir:hover {
+background-color: #2980b9;
 }
 
 
@@ -118,38 +135,39 @@ color: inherit; /* Herda a cor do texto pai */
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+margin: 0;
+padding: 0;
+list-style-type: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 nav ul li {
-  margin-right: 10px;
+margin-right: 10px;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #ddd;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #333;
-  padding: 10px 20px; /* Adiciona espaço interno para criar um botão */
-  border-radius: 4px; /* Arredonda as bordas do botão */
-  transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo ao passar o mouse */
+text-decoration: none;
+color: #ddd;
+font-size: 18px;
+font-weight: bold;
+background-color: #333;
+padding: 10px 20px; /* Adiciona espaço interno para criar um botão */
+border-radius: 4px; /* Arredonda as bordas do botão */
+transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo ao passar o mouse */
 }
 
 nav ul li a:hover {
-  background-color: #555; /* Altera a cor de fundo ao passar o mouse */
+background-color: #555; /* Altera a cor de fundo ao passar o mouse */
 }
 
 
 h2 {
-font-size: 24px;
+font-size: 22px;
 margin-bottom: 10px;
 color: darkturquoise;
+font-weight: bold;
 }
 
 footer {
@@ -176,84 +194,119 @@ color: #ccc;
 background-color: #333; /* Cor de fundo do rodapé */
 text-align: center;
 font-size: 12px;
-margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+margin: 0px 0px 50px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
 padding: 30px 0px 30px;
 color: dodgerblue;
 }
 
 #sobre-mim {
-  margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+margin: 0px 0px 50px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
 }
 #sobre-mim p {
 
-  transition: transform 0.5s ease-in-out;
+transition: transform 0.5s ease-in-out;
+font-style: italic;
 }
 
 #sobre-mim p:hover {
-  transform: scale(0.95);
+transform: scale(0.95);
 }
 
 #sobre-mim a {
 
-  color: #ccc;
+color: royalblue;
 }
 
 #sobre-mim a:hover {
-  color: dodgerblue; /* Define a cor dos links como vermelho quando o mouse estiver sobre eles */
+color: dodgerblue; /* Define a cor dos links como vermelho quando o mouse estiver sobre eles */
 }
 
 #projects {
-  margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
-  overflow: hidden;
+margin: 0px 0px 50px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+overflow: hidden;
 
 }
 
 .project-container {
-  display: flex;
-  overflow: hidden;
+display: flex;
+overflow: hidden;
+justify-content: center;
 }
 
 .project {
-  width: 50%; /* Dividindo em 3 colunas */
-  float: left;
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-  transition: transform 0.5s ease-in-out;
-  position: relative;
+width: 50%; /* Dividindo em 3 colunas */
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+transition: transform 0.5s ease-in-out;
+position: relative;
 }
 
 .project:hover {
-  transform: scale(0.9);
+transform: scale(0.9);
 }
 
 .project img {
-  width: 250px;
-  height: 250px;
+width: 250px;
+height: 250px;
+display: block;
+margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
-
-.project-details p i {
-  text-align: left;
-}
-
 
 .project-details {
   margin-top: 10px;
+  text-align: left;
 }
 
 .project h3 {
+  color: skyblue;
   margin-top: 10px;
+  text-align: center; /* Centraliza o título horizontalmente */
+  font-weight: bold;
 }
 
 .project p {
-  margin-top: 10px;
-  align-items: center;
+margin-top: 10px;
+align-items: center;
+font-style: italic;
+
 }
 
+.project i {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Adicione essas regras para os botões do carrossel */
+.carousel-button {
+position: relative;
+top: 0;
+transform: translateY(0);
+background-color: transparent;
+border: none;
+color: darkturquoise;
+cursor: pointer;
+font-size: 50px;
+}
+
+.carousel-navigation {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.prev-button {
+left: 0;
+}
+
+.next-button {
+right: 0;
+}
 
 /* Estilos para a seção Habilidades */
 #skills {
-margin: 0px 0px 100px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
+margin: 0px 0px 50px; /* Espaçamento de 100px para cima e nas laterais, sem espaçamento na parte inferior */
 padding: 0;
 overflow: hidden;
 }
@@ -269,12 +322,12 @@ position: relative;
 }
 
 .skill:hover {
-  transform: scale(0.9);
+transform: scale(0.9);
 }
 
 .skill img {
-  width: 125px;
-  height: 125px;
+width: 125px;
+height: 125px;
 }
 
 .skill h3 {
@@ -282,9 +335,9 @@ margin-top: 10px;
 }
 
 .skill p {
-  color: white;
-  font-weight: bold;
-  }
+color: white;
+font-weight: bold;
+}
 
 /* Estilos para os parágrafos dentro das seções */
 section p {
@@ -297,4 +350,3 @@ img[src^="./assets/emojis/"] {
 width: 16px;
 height: 16px;
 }
-
