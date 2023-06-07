@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./assets/css/celh.css">
   <link rel="stylesheet" href="./assets/css/celv.css">
   <link rel="icon" type="image/svg" href="./assets/emojis/1f9d1-1f3fd-200d-1f4bb.svg">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/speak-tts/dist/speak-tts.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
   <title>Víctor Chryz</title>
 </head>
 
@@ -61,12 +63,20 @@
       <audio id="audioPlayer" controls autoplay>
         <source id="audioSource" src="" type="audio/mp3">
       </audio>
+      <h2>
+        <a href="https://www.youtube.com/watch?v=pr1R6HA0mLg" target="_blank">
+          <img src="./assets/emojis/1f3a4.svg" alt="Emoji"> Xande de Pilares - Gratidão
+          <img src="./assets/emojis/1f3a7.svg" alt="Emoji">
+        </a>
+      </h2>
+      <img src="./assets/emojis/1f929.svg" alt="Emoji">     
     </div>
     
 
     <section id="sobre-mim">
       <h2>SOBRE MIM:</h2>
-      <p>
+      <button id="btn-reproduzir" onclick="lerTexto()">▶ Ouvir Texto</button>
+      <p id="texto-narracao" class="texto-destacado">
         Olá, meu nome é Víctor! Como você está? Espero que esteja tudo bem. 
         Tenho 33 anos e sou casado há mais de 10 anos. 
         Me interessei pela área da informática quando tinha 16 anos. 
@@ -87,8 +97,8 @@
         Paralelamente, participei do 
         <a href="https://horyu.org/" target="_blank">Projeto Horyu</a>, um servidor de jogo MMORPG privado, baseado no jogo oficial 
         <a href="https://www.lineage2.com/" target="_blank">Lineage 2</a> da 
-        <a href="https://us.ncsoft.com/en-us" target="_blank">NCSoft</a>, onde fui convidado a atuar como Programador Freelancer Remoto, ajudando a equipe do projeto e realizando pequenos ajustes/correções. Durante 2 anos, contribuí com a equipe, desenvolvendo minhas habilidades e colaborando ativamente.
-        Ao longo do tempo, fui reconhecido pelo proprietário do projeto e tive a oportunidade de assumir um papel de maior responsabilidade. Assumi a liderança do projeto, tornando-me o principal desenvolvedor e responsável por sua administração, ocupando o cargo de Administrador & Desenvolvedor. Esse projeto evoluiu e se transformou em 
+        <a href="https://us.ncsoft.com/en-us" target="_blank">NCSoft</a>, onde fui convidado a atuar como Programador Freelancer Remoto, ajudando a equipe do projeto e realizando otimizações, correções e melhorias. Durante 2 anos, contribuí com a equipe, desenvolvendo minhas habilidades e colaborando ativamente.
+        Ao longo do tempo, fui reconhecido pelo proprietário do projeto e tive a oportunidade de assumir um papel de maior responsabilidade. Assumi a liderança do projeto, tornando-me o principal desenvolvedor e responsável por sua administração. Esse projeto evoluiu e se transformou em 
         <a href="https://horyu.org/" target="_blank">Horyu Games</a>, uma empresa em crescimento no setor de jogos.
         Durante meu trabalho no Projeto Horyu como programador, utilizei e trabalhei com vários pacotes L2J (Java), como 
         <a href="https://l2-scripts.ru" target="_blank">L2J Scripts</a>, 
@@ -105,42 +115,35 @@
         <img src="./assets/emojis/1f499.svg" alt="Emoji">
       </p>
     </section>
-    
-    
-    
-    
-    </section>
-    
+   
 
     <section id="projects">
       <h2>PROJETOS:</h2>
       <div class="project-container">
+          <button class="carousel-button prev-button"><i class="material-icons">chevron_left</i></button>
         <div class="project">
           <a href="https://horyu.org/" target="_blank">
             <img src="https://horyu.org/img/HoryuGames720x600-Brand.png" alt="Horyu">
-          </a>
           <div class="project-details">
             <h3>Horyu</h3>
-            <p>Este foi um projeto bastante complexo de um servidor privado de jogo mmorpg baseado no Lineage 2 da NCSoft. Trabalhei com o WebSite, e arquivos do jogo Client/Server utilizando várias linguagens e ferramentas dentre elas</p>
-            <i>HTML, CSS, PHP, MySQL, MSSQL, Java, Delphi, C# e C++</i>
+          </a>
+            <p>Este foi um projeto bastante complexo de um servidor privado de jogo mmorpg baseado no Lineage 2 da NCSoft. Trabalhei com o WebSite, e arquivos do jogo Client/Server utilizando várias linguagens e ferramentas dentre elas <i>HTML, CSS, PHP, MySQL, MSSQL, Java, Delphi, C# e C++.</i></p>
           </div>
         </div>
         <div class="project">
           <a href="https://t.me/askmeGPT_bot" target="_blank">
             <img src="./assets/img/askmeGPT.jpeg" alt="AskmeGPT">
-          </a>
           <div class="project-details">
             <h3>AskmeGPT</h3>
-            <p>Este foi um projeto pessoal, um bot do Telegram que desenvolvi em Python e possui Inteligência Artificial baseado nas tecnologias GPT assim como o ChatGPT da OpenAI.</p>
-            <i>Ele é gratuito para usar.</i>
+          </a>
+            <p>Este foi um projeto pessoal, um bot do Telegram que desenvolvi em Python e possui Inteligência Artificial baseado nas tecnologias GPT assim como o ChatGPT da OpenAI. <i>Ele é gratuito para usar.</i></p>
           </div>
         </div>
         <div class="project">
           <img src="./assets/img/PDVSimples.jpg" alt="PDV Simples">
           <div class="project-details">
             <h3>PDV Simples</h3>
-            <p>Este foi um sistema de PDV (Ponto de Vendas) Simples que desenvolvi para uma comerciante ter o controle das finanças e mercadorias da mercearia utilizando</p>
-            <i>PHP, MySQL e JQuery.</i>
+            <p>Este foi um sistema de PDV (Ponto de Vendas) Simples que desenvolvi para uma comerciante ter o controle das finanças e mercadorias da mercearia utilizando <i>PHP, MySQL e JQuery.</i></p>
           </div>
         </div>
         <div class="project">
@@ -164,6 +167,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
+        <button class="carousel-button next-button"><i class="material-icons">chevron_right</i></button>
+      </div>
     </section>
     
     
