@@ -1,6 +1,6 @@
 # victorchryz.github.io
 
-Este é um simples projeto de Portfólio desenvolvido para aqueles que estão iniciando em desenvolvimento web e que gostariam de praticar, replicar e entender de forma simples as linguagens HTML, CSS &amp; JAVASCRIPT.
+Este é um simples projeto de Portfólio desenvolvido para aqueles que estão iniciando em desenvolvimento web e que gostariam de praticar, replicar e entender de forma simples as linguagens HTML, CSS &amp; JavaScript.
 
 ## Funcionalidades
 
